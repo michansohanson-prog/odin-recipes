@@ -20,7 +20,19 @@ h2,
 h3 {
 	color: aliceblue;
 }
-
+.header {
+	margin-top: 30px;
+	padding: 20px;
+	text-align: center;
+}
+.title-links {
+	list-style: none;
+	padding: 30px;
+}
+.title-links li {
+	padding: 20px;
+	background: linear-gradient(0deg, #1a1003, #e6bb7b);
+}
 p {
 	color: bisque;
 }
