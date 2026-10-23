@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: #053313;
+	line-height: 30px;
+}
+a {
+	text-decoration: none;
+	color: rgb(179, 212, 255);
+}
+nav {
+	padding: 20px;
+}
+h1,
+h2,
+h3 {
+	color: aliceblue;
+}
+
+p {
+	color: bisque;
+}
+li {
+	color: blanchedalmond;
+}
