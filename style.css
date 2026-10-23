@@ -10,10 +10,14 @@ body {
 }
 a {
 	text-decoration: none;
-	color: rgb(179, 212, 255);
+	color: rgb(198, 198, 219);
 }
 nav {
-	padding: 20px;
+	display: inline-block;
+	padding: 10px;
+	background-color: rgb(52, 149, 206);
+	border-radius: 40px;
+	margin: 20px 20px;
 }
 h1,
 h2,
@@ -21,21 +25,55 @@ h3 {
 	color: aliceblue;
 }
 .header {
-	margin-top: 30px;
-	padding: 20px;
-	text-align: center;
-}
-.title-links {
-	list-style: none;
 	padding: 30px;
+	text-align: center;
+	background: linear-gradient(90deg, rgb(53, 14, 14), rgb(59, 59, 3));
+	color: rgb(160, 160, 214);
+	text-shadow: 4px 4px 2px black;
+	box-shadow: 0 4px 2px black;
 }
-.title-links li {
-	padding: 20px;
-	background: linear-gradient(0deg, #1a1003, #e6bb7b);
+img {
+	border-radius: 20px;
+	box-shadow: 8px 8px 8px black;
 }
+.card-row {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 40px;
+}
+.card {
+	box-shadow: 2px 2px 2px black;
+	padding: 40px;
+	background: linear-gradient(
+		to right,
+		rgb(80, 53, 13),
+		rgb(6, 44, 6),
+		rgb(25, 92, 25)
+	);
+	border-radius: 20px;
+}
+
 p {
 	color: bisque;
 }
 li {
 	color: blanchedalmond;
+}
+
+.title {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+.recipe {
+	margin-top: 30px;
+	margin-left: 30%;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	align-items: flex-start;
+}
+.ingredients {
 }
