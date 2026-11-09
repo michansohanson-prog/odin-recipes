@@ -7,6 +7,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #053313;
   line-height: 1.5rem;
+  padding: 1rem;
 }
 a {
   text-decoration: none;
@@ -31,8 +32,12 @@ h3 {
   color: rgb(160, 160, 214);
   text-shadow: 4px 4px 2px black;
   box-shadow: 0 4px 2px black;
+  border-radius: 2rem;
 }
 img {
+  width: 100%;
+  max-width: 400px; /* Constrains the image so it doesn't break flexbox */
+  height: auto; /* Maintains correct aspect ratio */
   border-radius: 20px;
   box-shadow: 8px 8px 8px black;
 }
@@ -75,15 +80,22 @@ li {
 }
 
 .title {
-  margin-top: 40px;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  text-align: center; /* Ensures proper alignment when wrapping */
+}
+
+.titleH1 {
+  font-size: 2rem; /* Make sure it scales nicely */
+  line-height: 1.5; /* Clean proportional line spacing */
+  padding: 0 10px; /* Prevents text from hitting the screen edges on narrow 375px screens */
 }
 .recipe {
   margin-top: 30px;
-  margin-left: 30%;
+  margin-left: 2rem;
   display: flex;
   flex-direction: column;
   gap: 30px;
