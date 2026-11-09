@@ -6,7 +6,7 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #053313;
-  line-height: 30px;
+  line-height: 1.5rem;
 }
 a {
   text-decoration: none;
@@ -38,13 +38,16 @@ img {
 }
 .card-row {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap; /* Wraps cards onto multiple rows */
   margin-top: 40px;
-  gap: 1rem;
+  gap: 1rem; /* Space between the cards */
+  padding: 0 15px; /* Keeps cards from touching screen edges */
 }
+
 .card {
   box-shadow: 2px 2px 2px black;
-  padding: 1rem;
+  padding: 0.2rem;
   background: linear-gradient(
     to right,
     rgb(80, 53, 13),
@@ -52,9 +55,18 @@ img {
     rgb(25, 92, 25)
   );
   border-radius: 20px;
-  font-size: 1rem;
-}
+  font-size: 0.9rem; /* Slightly smaller font for tight spaces */
 
+  /* Key changes for 2 columns on 375px screens */
+  flex: 1 1 140px; /* Basis of 140px lets two fit side-by-side on ~375px */
+  max-width: 320px; /* Caps card width on large desktop screens */
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 p {
   color: bisque;
 }
